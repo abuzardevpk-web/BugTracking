@@ -1,0 +1,14 @@
+{
+  "name": "bugtracker",
+  "version": "1.0.0",
+  "description": "BugTracker - Full-stack bug tracking application",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "mvn spring-boot:run",
+    "start:frontend": "npm run dev --prefix bugtracker-frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
