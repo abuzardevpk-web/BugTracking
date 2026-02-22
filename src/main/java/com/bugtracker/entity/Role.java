@@ -1,0 +1,8 @@
+package com.bugtracker.entity;
+
+public enum Role {
+    ADMIN,
+    MANAGER,
+    DEVELOPER,
+    TESTER
+}
